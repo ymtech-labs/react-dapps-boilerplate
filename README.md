@@ -1,4 +1,4 @@
-# tuto-react-mantine
+# react-dapps-boilerplate
 
 <a href="http://www.typescriptlang.org/"><img src="https://img.shields.io/badge/%3C%2F%3E-TypeScript-%230074c1.svg?style=flat-square" height="20"></a>
 <a href="https://twitter.com/younesmjl"><img src="https://img.shields.io/twitter/follow/younesmjl.svg?style=social&label=Follow&maxAge=3600" height="20"></a>
@@ -11,12 +11,18 @@ The web's most popular front-end template for building web applications with
 
 ## Features
 
-- React 18, Vite, Yarn, ESBuild - born with fastness
-- Layout system
-- Path aliases (@Components, @Layout, @Pages)
-- Components Library with Mantine
-- Pre-configured with code quality tools: ESLint, Prettier, TypeScript, Cypress, Vitest, Github Actions
-- Deploy on Vercel, zero-config
+### Backend
+- 📦 Hardhat - Ethereum development environment for professionals
+- 🦾 TypeChain Hardhat plugin - Automatically generate TypeScript bindings for smartcontracts while using Hardhat.
+
+
+### Frontend
+- ⚡️ React 18, Vite, Yarn, ESBuild - born with fastness
+- 🔥 Layout system
+- 🔥 Path aliases (@Components, @Layout, @Pages)
+- 🎨 Components Library with Mantine
+- 🛠️ Pre-configured with code quality tools: ESLint, Prettier, TypeScript, Cypress, Vitest, Github Actions
+- ⚙️ Deploy on Vercel, zero-config
 
 ---
 

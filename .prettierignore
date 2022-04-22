@@ -1,3 +1,7 @@
 node_modules/
 public/
 dist/
+artifacts
+cache
+coverage*
+gasReporterOutput.json
