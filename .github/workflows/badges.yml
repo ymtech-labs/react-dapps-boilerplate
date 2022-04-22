@@ -25,8 +25,8 @@ jobs:
         uses: schneegans/dynamic-badges-action@v1.1.0
         with:
           auth: ${{ secrets.GIST_TOKEN_BADGES }}
-          gistID: 332f42fc979f7f81de3746eb4e49c3dc
-          filename: badges.json
+          gistID: 21183273cef6a16459dd73c2314520c6
+          filename: react-dapps-badges.json
           label: release
           message:  ${{ steps.extract_version.outputs.version }}
           color: green
