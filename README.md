@@ -12,11 +12,13 @@ The web's most popular front-end template for building decentralized application
 ## Features
 
 ### Backend
+
 - 📦 Hardhat - Ethereum development environment for professionals
 - 🦾 TypeChain Hardhat plugin - Automatically generate TypeScript bindings for smartcontracts while using Hardhat.
-
+- ⚙️ automatic deployment
 
 ### Frontend
+
 - ⚡️ React 18, Vite, Yarn, ESBuild - born with fastness
 - 🔥 Layout system
 - 🔥 Path aliases (@Components, @Layout, @Pages)
@@ -34,19 +36,19 @@ The web's most popular front-end template for building decentralized application
 `├──` [`contracts`](./contracts) — Solidity contracts<br>
 `├──` [`scripts`](./src/scripts) — Script to deploy contracts <br>
 `├──` [`test`](./src/test) — Script to test contracts <br>
-`├──` [`typechain`](./src/typechain) — Declaration files  for Contracts <br>
-`├──` [`src`](./src) —  dapp frontend <br>
+`├──` [`typechain`](./src/typechain) — Declaration files for Contracts <br>
+`├──` [`src`](./src) — dapp frontend <br>
 `├────` [`artifacts`](./src/artifacts) — compiled artifacts <br>
 `├────` [`assets`](./src/assets) — Assets such as css, sass, img files<br>
 `├────` [`components`](./src/components) — Reusable components for pages and layout<br>
-`├────` [`hooks`](./hooks) — React hooks such as ``, ``, etc.<br>
+`├────` [`hooks`](./hooks) — React hooks such as `, `, etc.<br>
 `├────` [`pages`](./pages) — Contains your Application Views and Routes<br>
-`├──` [`index.html`](./index.html) —  application entry point<br>
+`├──` [`index.html`](./index.html) — application entry point<br>
 
 ## Tech Stack
 
 - [Hardhat](https://hardhat.org/), [ethers.js](https://docs.ethers.io/),
-[TypeChain](https://github.com/dethcrypto/TypeChain/), [Waffle](https://getwaffle.io/)
+  [TypeChain](https://github.com/dethcrypto/TypeChain/), [Waffle](https://getwaffle.io/)
 - [React](https://reactjs.org/), [React Router](https://reactrouter.com/),
   [Mantine](https://mantine.dev/), [Mantine UI](https://ui.mantine.dev/), [Vitest](https://vitest.dev/)
 - [TypeScript](https://www.typescriptlang.org/),
@@ -65,7 +67,7 @@ The web's most popular front-end template for building decentralized application
   `git clone -o seed -b main --single-branch https://github.com/younesmjl/react-dapps-boilerplate.git`
 - Install project dependencies — `yarn install`
 - Compile your contract — `npx hardhat compile`
-- Starts a JSON-RPC server — `npx hardhat node`
+- Starts a JSON-RPC server — `yarn hardhat node`
 - Deploy your contract — `npx hardhat run scripts/deploy.ts --network localhost`
 - Launch the app — `yarn dev`, it will become available at [http://localhost:3000](http://localhost:3000/)
 
@@ -76,24 +78,26 @@ The web's most popular front-end template for building decentralized application
 ## Scripts
 
 ### Backend
+
 `npx hardhat accounts` — Prints the list of accounts
 `npx hardhat compile` — Compiles the entire project, building all artifacts
 `npx hardhat clean` — Clears the cache and deletes all artifacts
 `npx hardhat test` — Runs mocha tests
 `npx hardhat node` — Starts a JSON-RPC server on top of Hardhat Network
 `npx hardhat help` — Prints this message
-`REPORT_GAS=true npx hardhat test` — 
-`npx hardhat coverage` — 
+`REPORT_GAS=true npx hardhat test` —
+`npx hardhat coverage` —
 `npx hardhat run scripts/deploy.ts` — Runs a user-defined script after compiling
-`TS_NODE_FILES=true npx ts-node scripts/deploy.ts` — 
-`npx eslint '**/\*.{js,ts}'` — 
-`npx eslint '**/_.{js,ts}' --fix` — 
-`npx prettier '\*\*/_.{json,sol,md}' --check` — 
-`npx prettier '**/\*.{json,sol,md}' --write` — 
-`npx solhint 'contracts/**/_.sol'` — 
-`npx solhint 'contracts/\*\*/_.sol' --fix` — 
+`TS_NODE_FILES=true npx ts-node scripts/deploy.ts` —
+`npx eslint '**/\*.{js,ts}'` —
+`npx eslint '**/_.{js,ts}' --fix` —
+`npx prettier '\*\*/_.{json,sol,md}' --check` —
+`npx prettier '**/\*.{json,sol,md}' --write` —
+`npx solhint 'contracts/**/_.sol'` —
+`npx solhint 'contracts/\*\*/_.sol' --fix` —
 
 ### Frontend
+
 - `yarn dev` — Launches the app in development mode on [`http://localhost:3000`](http://localhost:3000/)
 - `yarn build` — Compiles and bundles the app for deployment
 - `yarn preview` — Preview your build app
