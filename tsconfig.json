@@ -6,7 +6,8 @@
       "module": "commonjs",
       "esModuleInterop": true
     },
-    "include": ["./hardhat.config.ts", "./scripts", "./deploy", "./test"]
+    "include": ["./scripts", "./deploy", "./test"],
+    "files": ["./hardhat.config.ts"]
   },
   "compilerOptions": {
     "target": "ESNext",
@@ -28,7 +29,8 @@
     "paths": {
       "@components/*": ["./components/*"],
       "@layout/*": ["./layout/*"],
-      "@pages/*": ["./pages/*"]
+      "@pages/*": ["./pages/*"],
+      "@utils/*": ["./utils/*"]
     }
   },
   "include": ["src"],
