@@ -9,7 +9,7 @@ import { BrandTwitter, BrandYoutube, BrandInstagram } from "tabler-icons-react";
 
 const useStyles = createStyles((theme) => ({
   footer: {
-    marginTop: 120,
+    marginTop: 60,
     borderTop: `1px solid ${
       theme.colorScheme === "dark" ? theme.colors.dark[5] : theme.colors.gray[2]
     }`,

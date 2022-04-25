@@ -15,7 +15,7 @@ The web's most popular front-end template for building decentralized application
 
 - 📦 Hardhat - Ethereum development environment for professionals
 - 🦾 TypeChain Hardhat plugin - Automatically generate TypeScript bindings for smartcontracts while using Hardhat.
-- ⚙️ automatic deployment
+- ⚙️ automatic deployment in local node
 
 ### Frontend
 

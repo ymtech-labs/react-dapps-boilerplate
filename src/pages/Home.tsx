@@ -27,7 +27,7 @@ const useStyles = createStyles((theme) => ({
   inner: {
     display: "flex",
     justifyContent: "center",
-    minWidth: "100vh",
+    marginTop: "60px",
     paddingTop: theme.spacing.xl,
     paddingBottom: theme.spacing.xl,
   },
@@ -88,13 +88,20 @@ export default function Home() {
         <div className={classes.inner}>
           <div className={classes.content}>
             <Title className={classes.title}>
-              A <span className={classes.highlight}>modern</span> React <br />{" "}
-              components library
+              A <span className={classes.highlight}>modern</span> React dapps
+              Boilerplate
             </Title>
             <Text color="dimmed" mt="md">
-              Build fully functional accessible web applications faster than
-              ever – Mantine includes more than 120 customizable components and
-              hooks to cover you in any situation
+              Build an amazing Dapps with all settings of you needs.
+              <br />
+              <b>TypeScript based</b> – build type safe applications, all
+              components and hooks export types.
+              <br />
+              <b>Free and open source</b> – all packages have MIT license, you
+              can use Mantine in any project.
+              <br />
+              <b>No annoying focus ring</b> – focus ring will appear only when
+              user navigates with keyboard
             </Text>
 
             <List
@@ -108,32 +115,28 @@ export default function Home() {
               }
             >
               <List.Item>
-                <b>TypeScript based</b> – build type safe applications, all
-                components and hooks export types
+                📦 <b>Hardhat</b> - Ethereum development environment for
+                professionals
               </List.Item>
               <List.Item>
-                <b>Free and open source</b> – all packages have MIT license, you
-                can use Mantine in any project
+                🦾 <b>TypeChain </b> - Hardhat plugin - Automatically generate
+                TypeScript bindings for smartcontracts while using Hardhat.
+              </List.Item>
+              <List.Item>⚙️ automatic Deploy in local node </List.Item>
+              <List.Item>
+                ⚡️ React 18, Vite, Yarn, ESBuild - born with fastness
+              </List.Item>
+              <List.Item> 🔥 Layout system </List.Item>
+              <List.Item>
+                🔥 Path aliases (@Components, @Layout, @Pages){" "}
               </List.Item>
               <List.Item>
-                <b>No annoying focus ring</b> – focus ring will appear only when
-                user navigates with keyboard
+                🎨 Components Library with Mantine - 🛠️ Pre-configured with code
+                quality tools: ESLint, Prettier, TypeScript, Cypress, Vitest,
+                Github Actions
               </List.Item>
+              <List.Item>⚙️ Deploy on Vercel, zero-config</List.Item>
             </List>
-
-            <Group mt={30}>
-              <Button radius="xl" size="md" className={classes.control}>
-                Get started
-              </Button>
-              <Button
-                variant="default"
-                radius="xl"
-                size="md"
-                className={classes.control}
-              >
-                Source code
-              </Button>
-            </Group>
           </div>
           <Image src={image} className={classes.image} />
         </div>

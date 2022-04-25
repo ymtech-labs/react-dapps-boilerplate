@@ -34,7 +34,7 @@ import Layout from "@layout/default";
 
 /**
  * *Pages */
-import Home from "@pages/index";
+import Home from "@pages/Home";
 import CardsPage from "@pages/CardsPage";
 import TablePage from "@pages/TablePage";
 import FormsPage from "@pages/FormsPage";

@@ -117,7 +117,7 @@ function headerLayout() {
           size="lg"
           transform="uppercase"
         >
-          Tuto React - Mantine
+          React Dapps - Boilerplate
         </Text>
       </MediaQuery>
       <div
