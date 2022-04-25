@@ -23,13 +23,14 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - run: npm install
+          cache: 'yarn'
+      - run: yarn install
       - name: Install semantic-release extra plugins
-        run: npm install --save-dev @semantic-release/changelog @semantic-release/git
+        run: yarn add -D @semantic-release/changelog @semantic-release/git
       - name: Test
-        run: npm run test:unit --if-present
+        run: yarn test:unit --if-present
       - name: Build
-        run: npm run build
+        run: yarn build
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GH_ACCESS_REPO }}
