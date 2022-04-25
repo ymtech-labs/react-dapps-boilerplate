@@ -11,7 +11,7 @@ import {
 import { Link, Outlet } from "react-router-dom";
 
 import HeaderLayout from "@layout/header";
-import TextAndTitleExample from "@components/TextAndTitleExample";
+import GreeterInteraction from "@components/GreeterInteraction";
 
 export default function Layout() {
   const theme = useMantineTheme();
@@ -66,7 +66,7 @@ export default function Layout() {
         }
       >
         <Outlet />
-        <TextAndTitleExample />
+        <GreeterInteraction />
       </AppShell>
     </Paper>
   );

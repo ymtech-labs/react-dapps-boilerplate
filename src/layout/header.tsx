@@ -9,58 +9,52 @@ import {
   Button,
   Menu,
   Divider,
+  Select,
 } from "@mantine/core";
 
 import { useEffect, useState } from "react";
 
 import LightDarkButton from "@components/LightDarkButton";
 import { Link } from "react-router-dom";
-import { showNotification } from "@mantine/notifications";
+import { useNotifications } from "@mantine/notifications";
 import {
   Alien,
   Network,
   Copy,
   CurrencyEthereum,
-  MessageCircle,
   ArrowBarToRight,
-  ArrowsLeftRight,
 } from "tabler-icons-react";
 
 function headerLayout() {
   const theme = useMantineTheme();
   const [opened, setOpened] = useState(false);
 
+  const notifications = useNotifications();
+
   // Connect to wallet
   const context = useWeb3React();
-  const {
-    connector,
-    library,
-    chainId,
-    account,
-    activate,
-    deactivate,
-    active,
-    error,
-  } = context;
+  const { library, chainId, account, activate, deactivate, active, error } =
+    context;
 
   const [networkName, setNetworkName] = useState("unknown");
 
-  useEffect(() => {
-    const connectWalletOnPageLoad = async () => {
-      if (localStorage?.getItem("isWalletConnected") === "true") {
-        try {
-          await activate(injected);
-          setNetworkName(library._network.name);
-        } catch (e) {
-          showNotification({
-            id: "Error to connect wallet ",
-            color: "red",
-            message: `Error with injected wallet : ${e}`,
-            autoClose: false,
-          });
-        }
+  const connectWalletOnPageLoad = async () => {
+    if (localStorage?.getItem("isWalletConnected") === "true") {
+      try {
+        await activate(injected);
+        if (active) setNetworkName(library._network.name || null);
+      } catch (e) {
+        notifications.showNotification({
+          id: "Error to connect wallet ",
+          color: "red",
+          message: `UseEffect (Error with injected wallet) : ${e}`,
+          autoClose: false,
+        });
       }
-    };
+    }
+  };
+
+  useEffect(() => {
     connectWalletOnPageLoad();
   });
 
@@ -69,10 +63,10 @@ function headerLayout() {
       await activate(injected);
       localStorage.setItem("isWalletConnected", "true");
     } catch (e) {
-      showNotification({
+      notifications.showNotification({
         id: "Error to connect wallet ",
         color: "red",
-        message: `Error with injected wallet : ${e}`,
+        message: `activate (Error with injected wallet) : ${e}`,
         autoClose: false,
       });
     }
@@ -83,7 +77,7 @@ function headerLayout() {
       deactivate();
       localStorage.setItem("isWalletConnected", "false");
     } catch (e) {
-      showNotification({
+      notifications.showNotification({
         id: "Error to disconnect wallet ",
         color: "red",
         message: `Error with injected wallet : ${e}`,
@@ -94,7 +88,7 @@ function headerLayout() {
 
   function copyAccount(adress: string) {
     navigator.clipboard.writeText(adress || "");
-    return showNotification({
+    return notifications.showNotification({
       id: "Copy",
       color: "green",
       message: `The account address has been copied : ${adress}`,
@@ -130,6 +124,7 @@ function headerLayout() {
         style={{
           display: "flex",
           justifyContent: "space-between",
+          alignItems: "center",
           gap: "10px",
         }}
       >
@@ -182,11 +177,16 @@ function headerLayout() {
                   {library.connection.url}
                 </span>
               </Menu.Label>
-              <Menu.Item icon={<Network size={14} />}>
+              <Menu.Item
+                onClick={() => {
+                  copyAccount;
+                }}
+                icon={<Network size={14} />}
+              >
                 Network :{" "}
                 <b>
                   {" "}
-                  {networkName} ({chainId} )
+                  {networkName} ({chainId})
                 </b>
               </Menu.Item>
               <Menu.Item
@@ -210,6 +210,24 @@ function headerLayout() {
             </Menu>
           </>
         )}
+
+        <Select
+          placeholder="Pick one"
+          value={networkName}
+          searchable
+          nothingFound="No network"
+          //onChange={setNetworkName}
+          data={[
+            { value: "homestead", label: "Mainnet" },
+            { value: "ropsten", label: "Ropsten" },
+            { value: "rinkeby", label: "Rinkeby" },
+            { value: "goerli", label: "Goerli" },
+            { value: "mumbai", label: "Mumbai" },
+            { value: "polygon", label: "Polygon" },
+            { value: "unknown", label: "Hardhat" },
+            { value: "1337", label: "Ganache" },
+          ]}
+        />
 
         <LightDarkButton />
       </div>

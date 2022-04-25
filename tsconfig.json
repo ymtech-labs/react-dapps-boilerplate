@@ -30,7 +30,8 @@
       "@components/*": ["./components/*"],
       "@layout/*": ["./layout/*"],
       "@pages/*": ["./pages/*"],
-      "@utils/*": ["./utils/*"]
+      "@utils/*": ["./utils/*"],
+      "@contract/*": ["./artifacts/contracts/*"]
     }
   },
   "include": ["src"],
