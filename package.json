@@ -4,16 +4,12 @@
   "version": "1.0.0",
   "homepage": "https://younesmjl.github.io/tuto-react-mantine/",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
     "prepare": "husky install",
-    "commit": "git cz",
-    "predeploy": "yarn build"
+    "commit": "git cz"
   },
   "dependencies": {
     "eslint-import-resolver-typescript": "^2.7.1"
-   },
+  },
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
