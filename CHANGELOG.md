@@ -1,3 +1,15 @@
+# [1.2.0](https://github.com/younesmjl/react-dapps-boilerplate/compare/v1.1.0...v1.2.0) (2022-05-06)
+
+
+### Bug Fixes
+
+* **package.json:** delete unused command ([b2b7fe3](https://github.com/younesmjl/react-dapps-boilerplate/commit/b2b7fe37da4ebc6cfcfae56b06338ae7cf585010))
+
+
+### Features
+
+* **frontend:** creation of specific repo for front ([8e43085](https://github.com/younesmjl/react-dapps-boilerplate/commit/8e43085e83889f5733ec4c4fcfc7885f7082a8c3))
+
 # [1.1.0](https://github.com/younesmjl/react-dapps-boilerplate/compare/v1.0.0...v1.1.0) (2022-04-28)
 
 
