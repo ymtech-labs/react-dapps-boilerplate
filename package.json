@@ -1,8 +1,8 @@
 {
-  "name": "mantine-vite",
+  "name": "contract-react-boilerplate",
   "private": true,
   "version": "1.1.0",
-  "homepage": "https://younesmjl.github.io/tuto-react-mantine/",
+  "homepage": "https://younesmjl.github.io/react-dapps-boilerplate/",
   "scripts": {
     "dev": "vite",
     "build": "npx hardhat compile && tsc && vite build",
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "eslint-import-resolver-typescript": "^2.7.1"
-   },
+  },
   "devDependencies": {
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
