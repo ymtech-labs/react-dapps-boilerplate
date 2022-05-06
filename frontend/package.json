@@ -1,8 +1,8 @@
 {
-  "name": "mantine-vite",
+  "name": "frontend-react-boilerplate",
   "private": true,
   "version": "1.0.0",
-  "homepage": "https://younesmjl.github.io/tuto-react-mantine/",
+  "homepage": "https://younesmjl.github.io/react-dapps-boilerplate/frontend",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -36,11 +36,6 @@
     "typescript": "^4.5.2",
     "vite": "^2.9.2",
     "vite-tsconfig-paths": "^3.4.1"
-  },
-  "config": {
-    "commitizen": {
-      "path": "@commitlint/cz-commitlint"
-    }
   },
   "license": "MIT"
 }
