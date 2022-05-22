@@ -11,7 +11,7 @@
     "eslint-import-resolver-typescript": "^2.7.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^16.2.3",
+    "@commitlint/cli": "^17.0.0",
     "@commitlint/config-conventional": "^16.2.1",
     "@commitlint/cz-commitlint": "^16.2.3",
     "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers",
