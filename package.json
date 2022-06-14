@@ -49,7 +49,7 @@
     "hardhat-gas-reporter": "^1.0.4",
     "husky": "^7.0.4",
     "lint-staged": "^12.3.8",
-    "prettier": "^2.3.2",
+    "prettier": "^2.7.0",
     "prettier-plugin-solidity": "^1.0.0-beta.13",
     "semantic-release": "^19.0.2",
     "solhint": "^3.3.6",
