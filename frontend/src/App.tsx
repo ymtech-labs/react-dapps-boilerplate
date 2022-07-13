@@ -1,7 +1,7 @@
 /**
  * * React Utils
  */
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useRoutes } from "react-router-dom";
 
 /**
  * * Wallet && Blockchain interaction */
@@ -29,15 +29,9 @@ import {
 import { useHotkeys, useLocalStorage } from "@mantine/hooks";
 
 /**
- * *Layout */
-import Layout from "@layout/default";
-
-/**
  * *Pages */
-import Home from "@pages/Home";
-import CardsPage from "@pages/CardsPage";
-import TablePage from "@pages/TablePage";
-import FormsPage from "@pages/FormsPage";
+import routes from "~react-pages";
+import { Suspense } from "react";
 
 function App() {
   /*Theme Mode Management*/
@@ -87,15 +81,7 @@ function App() {
               {getErrorMessage(error)}
             </h4>
           )}
-
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/examples" element={<Layout />}>
-              <Route path="/examples/cards" element={<CardsPage />} />
-              <Route path="/examples/table" element={<TablePage />} />
-              <Route path="/examples/forms" element={<FormsPage />} />
-            </Route>
-          </Routes>
+          <Suspense fallback={<p>Loading...</p>}>{useRoutes(routes)}</Suspense>
         </MantineProvider>
       </ColorSchemeProvider>
     </div>
