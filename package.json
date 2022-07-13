@@ -8,7 +8,7 @@
     "commit": "git cz"
   },
   "dependencies": {
-    "eslint-import-resolver-typescript": "^2.7.1"
+    "eslint-import-resolver-typescript": "^3.2.5"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.0.2",
