@@ -81,13 +81,13 @@
     "@commitlint/types" "^17.0.0"
     ajv "^8.11.0"
 
-"@commitlint/cz-commitlint@^17.1.1":
-  version "17.1.1"
-  resolved "https://registry.yarnpkg.com/@commitlint/cz-commitlint/-/cz-commitlint-17.1.1.tgz#853cb160969fc6dda6d7d26bf061a6e008c1fa87"
-  integrity sha512-vAOfSAsUx7qwtgFK4trQ3Q3x0VawMej0rkIcDIQtWJzeUlRRFZYK+Td4oDUfhiqEGY0NQ9N5c0AgIkixG1Mruw==
+"@commitlint/cz-commitlint@^17.1.2":
+  version "17.1.2"
+  resolved "https://registry.yarnpkg.com/@commitlint/cz-commitlint/-/cz-commitlint-17.1.2.tgz#14a989ace5c27bb4d4ec05171521c0fb20f0b9d4"
+  integrity sha512-U1cpvTiri5Ib3m4xkmI4sk4Wh95dQRy2hrxt8YWTSKvyBHpOXfu9EIIqDQ+j8/aLSKo2RjBxS4lValxXnpJ4xA==
   dependencies:
     "@commitlint/ensure" "^17.0.0"
-    "@commitlint/load" "^17.1.1"
+    "@commitlint/load" "^17.1.2"
     "@commitlint/types" "^17.0.0"
     chalk "^4.1.0"
     lodash "^4.17.21"
