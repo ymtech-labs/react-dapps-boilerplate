@@ -7436,10 +7436,10 @@ hardhat-deploy@^0.11.22:
     qs "^6.9.4"
     zksync-web3 "^0.8.1"
 
-hardhat-ethernal@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/hardhat-ethernal/-/hardhat-ethernal-3.0.1.tgz#b9698c19898d6f9070d0a5034a99d39bd826b88c"
-  integrity sha512-I036c/4GTjHn+ejMZE4ejOFguX8kNOve8n3k2fhr52nft5dotFgOQVBFmcVAuyTSN1OwKHvphs2KAMFAR20Smw==
+hardhat-ethernal@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/hardhat-ethernal/-/hardhat-ethernal-3.1.0.tgz#4901284a0284fd960380184b7588d4b0a717fa6c"
+  integrity sha512-oQUzlAQxQPx1o6s0N9p8TJ+9h9GYKFcwkaCv0yK/yfeqHhRun7O/VykEa+SxukvlzIo2h/Gw3anp0TTfWDLlhA==
   dependencies:
     "@firebase/firestore-types" "2.2.0"
     axios "^0.27.2"
