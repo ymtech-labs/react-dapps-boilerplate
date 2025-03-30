@@ -46,7 +46,7 @@
     "hardhat": "^2.13.0",
     "hardhat-deploy": "^0.11.26",
     "hardhat-ethernal": "^3.1.0",
-    "hardhat-gas-reporter": "^1.0.9",
+    "hardhat-gas-reporter": "^1.0.10",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.1",
     "prettier": "^2.8.8",
