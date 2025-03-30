@@ -44,7 +44,7 @@
     "ethers": "^5.7.2",
     "git-precommit-checks": "^3.1.0",
     "hardhat": "^2.13.0",
-    "hardhat-deploy": "^0.11.26",
+    "hardhat-deploy": "^1.0.1",
     "hardhat-ethernal": "^3.1.0",
     "hardhat-gas-reporter": "^1.0.9",
     "husky": "^8.0.3",
